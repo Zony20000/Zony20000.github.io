@@ -23,8 +23,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
 :root{
-    --blue: #438FD9;
-    --black: #000000;
+    --blue: #30949B;
+    --blue-dark:#305E9B;
+    --black: #061314;
     --white: #F7F5F2;
     --grey: #DFDFDE;
 }
@@ -527,10 +528,15 @@ header #menu-btn:hover{
  .skill-item.frame.item2 .progress-bar span{
     width:80%;
 }
+ .skill-item.frame.item3 .progress-bar span{
+    width:40%;
+}
+ .skill-item.frame.item4 .progress-bar span{
+    width:40%;
+}
 
 
 /*--------------------- 5- About Area CSS (End) ---------------------*/
-
 
 
 /*--------------------- 6- Qualification Area CSS (Start) ---------------------*/
@@ -549,25 +555,87 @@ header #menu-btn:hover{
     gap: 4rem;
 }
 
+/* --- Configuración General --- */
+.qualifications-container {
+    background-color:var(--black); /* Fondo oscuro principal */
+    color: var(--grey);
+    font-family: 'Segoe UI', sans-serif;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* --- Estilos del Acordeón --- */
+.accordion-item {
+    margin-bottom: 15px;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid var(--black);
+}
+
+.accordion-header {
+    width: 100%;
+    background-color: #0f222e;
+    color: white;
+    padding: 20px;
+    text-align: left;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.accordion-header:hover {
+    background-color: #162c3b;
+}
+
+.accordion-header h2{
+    font-size: 2.5rem;
+    color: var(--white);
+    padding: 2rem 0;
+}
+
+.accordion-body {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-out;
+    background-color: #081620; /* Ligeramente más claro que el fondo general */
+}
+
+.toggle-icon {
+    font-size: 1.5rem;
+    color: #14b8a6;
+    transition: transform 0.3s;
+}
+
+.accordion-header.active .toggle-icon {
+    transform: rotate(45deg);
+}
+
 .education, .experience{
     -webkit-box-flex: 1;
     -ms-flex: 1 1 40rem;
         flex: 1 1 40rem;
+    padding: 2%;
 }
 
-.experience-item{
-    position: relative;
+.education-item{
+    content: '';
+    position: relative;;
     -webkit-box-flex: 1;
     -ms-flex: 1 1 40rem;
         flex: 1 1 40rem;
-    padding: 0 3rem 2rem 3rem;
-    border-left: 0.2rem solid var(--blue);
-    margin-left: 2rem;
+    padding: 0 5rem 2rem 3rem;
+    border-left: 0.2rem solid var(--blue);;
+    margin-left: 4rem;
 }
 
-.experience-item i{
+.education-item i{
     position: absolute;
-    top: 0; 
     left: -2.5rem;
     height:5rem;
     width: 5rem;
@@ -577,6 +645,57 @@ header #menu-btn:hover{
     font-size: 2rem;
     color:var(--white);
     background:var(--blue);
+}
+
+.education-item .content{
+    border-radius: 0.5rem;
+    padding: 1rem 2rem;
+    border-left: 2rem;
+}
+
+.education-item span{
+    background: #222;
+    color: var(--white);
+    padding: 0.5rem 1.5rem;
+    font-size: 1.8rem;
+    border-radius: 50rem;
+}
+
+.education-item h3{
+    font-size: 2.5rem;
+    color: var(--white);
+    padding: 2rem 0;
+}
+
+.education-item p{
+    color: var(--grey);
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+}
+
+
+.experience-item{
+    content: '';
+    position: relative;;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 40rem;
+        flex: 1 1 40rem;
+    padding: 0 5rem 2rem 3rem;
+    border-left: 0.2rem solid var(--blue-dark);;
+    margin-left: 4rem;
+}
+
+.experience-item i{
+    position: absolute;
+    left: -2.5rem;
+    height:5rem;
+    width: 5rem;
+    border-radius: 50%;
+    line-height: 5rem;
+    text-align: center;
+    font-size: 2rem;
+    color:var(--white);
+    background:var(--blue-dark);
 }
 
 .experience-item .content{
