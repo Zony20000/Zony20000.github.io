@@ -23,7 +23,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
 :root{
-    --blue: #30949B;
+    --green: #30949B;
     --blue-dark:#305E9B;
     --black: #061314;
     --white: #F7F5F2;
@@ -48,7 +48,7 @@
 
 *::selection{
     color: var(--white);
-    background-color: var(--blue);
+    background-color: var(--green);
 }
 
 html{
@@ -72,7 +72,7 @@ section{
 
 ::-webkit-scrollbar-thumb{
     border-radius: 1rem;
-    background-color: var(--blue);
+    background-color: var(--green);
 }
 
 ::-webkit-scrollbar-track{
@@ -88,7 +88,7 @@ section{
 
 .swiper-pagination-bullet-active{
     width: 3rem;
-    background: var(--blue);
+    background: var(--green);
 }
 
 /*--------------------- 0- Global CSS (End) ---------------------*/
@@ -103,7 +103,7 @@ section{
 .heading h2{
     text-align: center;
     padding-bottom: 2rem;
-    color:var(--blue);
+    color:var(--green);
     font-size: 4rem;
 }
 
@@ -118,7 +118,7 @@ section{
     position: absolute;
     bottom: -0.5rem; left: 0;
     z-index: -1;
-    background: var(--blue);
+    background: var(--green);
     height: 0.2rem;
     width: 80%;
     margin-left: 10%;
@@ -133,9 +133,9 @@ section{
     display: inline-block;
     padding: 1rem 2rem;
     font-size: 1.8rem;
-    color: var(--blue);
+    color: var(--green);
     background-color: transparent;
-    border: 0.2rem solid var(--blue);
+    border: 0.2rem solid var(--green);
 }
 
 .btn i{
@@ -144,7 +144,7 @@ section{
 
 .btn:hover{
     color: var(--white);
-    background-color: var(--blue);
+    background-color: var(--green);
     cursor: pointer;
 }
 
@@ -184,7 +184,7 @@ header.sticky{
 header .logo h2{
     font-size: 2.5rem;
     font-weight: 900;
-    color: var(--blue);
+    color: var(--green);
     text-transform: uppercase;
     letter-spacing: 0.2rem;
 }
@@ -197,7 +197,7 @@ header .navbar a{
 
 header .navbar a:hover,
 header .navbar a.active{
-    color: var(--blue);
+    color: var(--green);
 }
 
 header #menu-btn{
@@ -217,7 +217,7 @@ header .fa-times{
 }
 
 header #menu-btn:hover{
-    color: var(--blue);
+    color: var(--green);
 }
 
 /*--------------------- 3- Header Area CSS (End) ---------------------*/
@@ -285,7 +285,7 @@ header #menu-btn:hover{
 .home .content h2{
     font-size: 2.5rem;
     font-weight: 400;
-    color: var(--blue);
+    color: var(--green);
 }
 
 .home .content h1{
@@ -296,7 +296,7 @@ header #menu-btn:hover{
 }
 
 .home .content h1 span{
-    color: var(--blue);
+    color: var(--green);
 
 }
 
@@ -332,7 +332,7 @@ header #menu-btn:hover{
 
 .about .image img{
     width: 100%;
-    border: 1rem solid var(--blue);
+    border: 1rem solid var(--green);
 }
 
 .about .content{
@@ -435,7 +435,7 @@ header #menu-btn:hover{
 
 .counting .box .count{
     font-size: 3.5rem;
-    color: var(--blue);
+    color: var(--green);
     padding-bottom: 0.5rem;
 }
 
@@ -491,7 +491,7 @@ header #menu-btn:hover{
  .skill-item .box .progress-bar span{
     display:block;
     height:100%;
-    background: var(--blue);
+    background: var(--green);
 }
 
  .skill-item.item1 .box:nth-child(1) .progress-bar span{
@@ -630,7 +630,7 @@ header #menu-btn:hover{
     -ms-flex: 1 1 40rem;
         flex: 1 1 40rem;
     padding: 0 5rem 2rem 3rem;
-    border-left: 0.2rem solid var(--blue);;
+    border-left: 0.2rem solid var(--green);;
     margin-left: 4rem;
 }
 
@@ -644,7 +644,7 @@ header #menu-btn:hover{
     text-align: center;
     font-size: 2rem;
     color:var(--white);
-    background:var(--blue);
+    background:var(--green);
 }
 
 .education-item .content{
